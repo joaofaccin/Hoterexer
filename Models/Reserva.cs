@@ -56,8 +56,7 @@ namespace exeHotel.Models
                 throw new InvalidOperationException("Erro: Nenhuma suíte cadastrada.");
             }
 
-            decimal valor = DiasReservados * Suite.Valor;
-
+            decimal valor = DiasReservados * Suite.Valor * Hospedes.Count;
             if (DiasReservados >= 10)
             {
                 valor *= 0.9M; // Desconto de 10%

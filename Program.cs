@@ -36,7 +36,7 @@ else
 {
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine($"✅ Hóspedes cadastrados: {qtdHospedes}");
-    Console.WriteLine($"💰 Valor total da diária: R$ {reserva.CalcularDiaria():F2}");
+    Console.WriteLine($"💰 Valor total da diária por hóspede: R$ {reserva.CalcularDiaria():F2}");
     Console.ResetColor();
 }
 
