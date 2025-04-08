@@ -1,0 +1,14 @@
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\bin\Debug\net9.0\exeHotel.exe
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\bin\Debug\net9.0\exeHotel.deps.json
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\bin\Debug\net9.0\exeHotel.runtimeconfig.json
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\bin\Debug\net9.0\exeHotel.dll
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\bin\Debug\net9.0\exeHotel.pdb
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.AssemblyInfoInputs.cache
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.AssemblyInfo.cs
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.csproj.CoreCompileInputs.cache
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.dll
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\refint\exeHotel.dll
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.pdb
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.genruntimeconfig.cache
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\ref\exeHotel.dll
