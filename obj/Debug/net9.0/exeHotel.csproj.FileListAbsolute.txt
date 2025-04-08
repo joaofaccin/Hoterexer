@@ -12,3 +12,4 @@ C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\refint\exeHotel.dll
 C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.pdb
 C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.genruntimeconfig.cache
 C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\ref\exeHotel.dll
+C:\Users\PICHAU\OneDrive\Documents\exeHotel\obj\Debug\net9.0\exeHotel.sourcelink.json

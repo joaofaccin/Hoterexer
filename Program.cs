@@ -1,28 +1,43 @@
-﻿using System.Diagnostics.Contracts;
-using System.Text;
+﻿using System.Text;
 using exeHotel.Models;
-
 
 Console.OutputEncoding = Encoding.UTF8;
 
-List<Pessoa> hospedes = new List<Pessoa>();
+// Cabeçalho bonito
+Console.ForegroundColor = ConsoleColor.Cyan;
+Console.WriteLine("=== Sistema de Reservas de Hotel ===\n");
+Console.ResetColor();
 
+// Criação de hóspedes
+List<Pessoa> hospedes = new List<Pessoa>
+{
+    new Pessoa(nome: "Hospede 1"),
+    new Pessoa(nome: "Hospede 2")
+};
 
-Pessoa p1 = new Pessoa(nome: "Hospede 1");
-Pessoa p2 = new Pessoa(nome: "Hospede 2");
-Pessoa p3 = new Pessoa(nome: "Hospede 3");
-
-hospedes.Add(p1);
-hospedes.Add(p2);
-hospedes.Add(p3);
-
-Suite suite = new Suite(tipoSuite: "Suite 1", capacidade: 2, valor: 30);
-
-
+// Criação da suíte e reserva
+Suite suite = new Suite(tipoSuite: "Suíte Luxo", capacidade: 2, valor: 30);
 Reserva reserva = new Reserva(diasReservados: 10);
 
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospede(hospedes);
 
-Console.WriteLine($"Hóspedes:{reserva.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Diária:{reserva.CalcularDiaria()}");
+// Verificação de capacidade e exibição
+int qtdHospedes = reserva.ObterQuantidadeHospedes();
+Console.WriteLine("\n--- Detalhes da Reserva ---");
+
+if (qtdHospedes > suite.Capacidade)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("❌ Erro: Capacidade da suíte excedida. Reserva inválida.");
+    Console.ResetColor();
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine($"✅ Hóspedes cadastrados: {qtdHospedes}");
+    Console.WriteLine($"💰 Valor total da diária: R$ {reserva.CalcularDiaria():F2}");
+    Console.ResetColor();
+}
+
+Console.WriteLine("\n=============================\n");

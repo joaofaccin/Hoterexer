@@ -3,58 +3,67 @@ using System.Collections.Generic;
 
 namespace exeHotel.Models
 {
-  public class Reserva
-  {
-    public List<Pessoa> Hospedes { get; set; }
-    public Suite Suite { get; set; }
-    public int DiasReservados { get; set; }
-
-    public Reserva() { }
-
-    public Reserva(int diasReservados)
+    public class Reserva
     {
-      DiasReservados = diasReservados;
+        public List<Pessoa> Hospedes { get; private set; } = new();
+        public Suite Suite { get; private set; }
+        public int DiasReservados { get; private set; }
+
+        public Reserva() { }
+
+        public Reserva(int diasReservados)
+        {
+            DiasReservados = diasReservados;
+        }
+
+        public void CadastrarSuite(Suite suite)
+        {
+            Suite = suite ?? throw new ArgumentNullException(nameof(suite), "Suite não pode ser nula.");
+        }
+
+     public void CadastrarHospede(List<Pessoa> hospedes)
+{
+    if (Suite == null)
+    {
+        Console.WriteLine("Erro: Cadastre uma suíte antes de adicionar hóspedes.");
+        return;
     }
 
-    public void CadastrarHospede(List<Pessoa> hospedes)
+    if (hospedes == null || hospedes.Count == 0)
     {
-      if (Suite != null && hospedes.Count <= Suite.Capacidade)
-      {
-        Hospedes = hospedes;
-      }
-      else
-      {
-        throw new Exception("Número de hóspedes excede a capacidade da suíte.");
-      }
+        Console.WriteLine("Nenhum hóspede fornecido.");
+        return;
     }
 
-    public void CadastrarSuite(Suite suite)
-    {
-      Suite = suite;
-    }
+    Hospedes = hospedes;
 
-    public int ObterQuantidadeHospedes()
+    if (hospedes.Count > 2)
     {
-      int quantidade = Hospedes?.Count ?? 0;
-
-      if (quantidade > 2)
-      {
         Console.WriteLine("Atenção: Mais de 2 hóspedes cadastrados.");
-      }
-
-      return quantidade;
     }
+}
 
-    public decimal CalcularDiaria()
-    {
-      decimal valor = DiasReservados * Suite.Valor;
 
-      if (DiasReservados >= 10)
-      {
-        valor *= 0.9M; // Aplica 10% de desconto
-      }
+        public int ObterQuantidadeHospedes()
+        {
+            return Hospedes?.Count ?? 0;
+        }
 
-      return valor;
+        public decimal CalcularDiaria()
+        {
+            if (Suite == null)
+            {
+                throw new InvalidOperationException("Erro: Nenhuma suíte cadastrada.");
+            }
+
+            decimal valor = DiasReservados * Suite.Valor;
+
+            if (DiasReservados >= 10)
+            {
+                valor *= 0.9M; // Desconto de 10%
+            }
+
+            return valor;
+        }
     }
-  }
 }
