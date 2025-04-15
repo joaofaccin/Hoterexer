@@ -36,7 +36,16 @@ else
 {
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine($"✅ Hóspedes cadastrados: {qtdHospedes}");
-    Console.WriteLine($"💰 Valor total da diária por hóspede: R$ {reserva.CalcularDiaria():F2}");
+    Console.WriteLine($"🏨 Capacidade da suíte: {suite.Capacidade}");
+
+    Console.WriteLine("👥 Lista de hóspedes:");
+    foreach (var hospede in hospedes)
+    {
+        Console.WriteLine($"- {hospede.Nome} {hospede.Sobrenome}");
+    }
+
+    Console.WriteLine($"🏨 Tipo da suíte: {suite.TipoSuite}");
+    Console.WriteLine($"💰 Valor total da reserva: R$ {reserva.CalcularDiaria():F2}");
     Console.ResetColor();
 }
 
