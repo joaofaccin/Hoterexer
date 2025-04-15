@@ -51,5 +51,5 @@ else
 
 Console.WriteLine("\n=============================\n");
 
-Console.WriteLine("Pressione qualquer tecla para sair...");
+Console.WriteLine("Pressione qualquer tecla para sair ......");
 Console.ReadKey();
