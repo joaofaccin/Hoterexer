@@ -1,0 +1,15 @@
+/media/lenioth/Armazanamento/Hoterexer/bin/Debug/net8.0/exeHotel
+/media/lenioth/Armazanamento/Hoterexer/bin/Debug/net8.0/exeHotel.deps.json
+/media/lenioth/Armazanamento/Hoterexer/bin/Debug/net8.0/exeHotel.runtimeconfig.json
+/media/lenioth/Armazanamento/Hoterexer/bin/Debug/net8.0/exeHotel.dll
+/media/lenioth/Armazanamento/Hoterexer/bin/Debug/net8.0/exeHotel.pdb
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.GeneratedMSBuildEditorConfig.editorconfig
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.AssemblyInfoInputs.cache
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.AssemblyInfo.cs
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.csproj.CoreCompileInputs.cache
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.sourcelink.json
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.dll
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/refint/exeHotel.dll
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.pdb
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/exeHotel.genruntimeconfig.cache
+/media/lenioth/Armazanamento/Hoterexer/obj/Debug/net8.0/ref/exeHotel.dll

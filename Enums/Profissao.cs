@@ -9,6 +9,7 @@ namespace exeHotel.Enums
     Arquiteto,
     Enfermeiro,
     Programador,
-    Designer
+    Designer,
+    Destista
   }
 }
